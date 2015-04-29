@@ -1,0 +1,5 @@
+== Product Listing with Backbone
+
+Run tests with:
+
+* rspec spec

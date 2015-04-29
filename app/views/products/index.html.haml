@@ -1,0 +1,15 @@
+.container
+  .header.clearfix
+    %h3.text-muted Product Listing
+  .row.marketing
+    .col-lg-12
+      #products
+  %footer.footer
+    %p © ProductListing 2015
+
+
+:javascript
+  $(function() {
+    window.router = new ProductListingBackbone.Routers.ProductsRouter({products: #{@products.to_json.html_safe}});
+    Backbone.history.start();
+  });
